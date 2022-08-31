@@ -46,6 +46,10 @@ The previous generated Huffman-File "foo.huff" should be decoded. For that follo
 ```
 ./huffman -d foo.huff -o output.txt
 ```
-That result in a decompressed file 
+That result in a decompressed file called "output.txt" which is equivalent to the file "input.txt"
+
+# Testing
+
+This program was tested via system tests. These tests check for different modalities (eg. batchsize and sorting algorithm) whether the input file equals the compressed and then decompressed file. These tests can be found in the directory "Testing" and can be executed with the script tests.sh. The input data for this script is located in the directory "test_files". Therefore anybody can execute their own individual tests and check for correctness of the program
 
 
