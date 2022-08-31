@@ -37,9 +37,15 @@ There are following options to run the program:
 # Example Encoding 
 Let's assume there is a file called "input.txt" which should be compressed. 
 ```
-./huffman input.txt -o huffman.huf
+./huffman input.txt -o foo
 ```
+The above command would compress the input file into a file foo.huff. Options can be added to this command to see which effect different implementation have on the runtime. 
 
-
+# Example Decoding 
+The previous generated Huffman-File "foo.huff" should be decoded. For that following command must be run: 
+```
+./huffman -d foo.huff -o output.txt
+```
+That result in a decompressed file 
 
 
