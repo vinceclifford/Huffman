@@ -34,7 +34,7 @@ There are following options to run the program:
 `-V<int>` Select specific program version. Default: V9. Program Version listed at the end of the README <br />
 `-h`, `--help` Print help page <br />
 
-#Example Encoding 
+# Example Encoding 
 Let's assume there is a file called "input.txt" which should be compressed. 
 ```
 ./huffman input.txt -o huffman.huf
