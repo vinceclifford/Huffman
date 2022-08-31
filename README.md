@@ -1,6 +1,6 @@
 # Huffman
 
-This is an implementation of Huffman's-Encoding. The Kompression of an arbitrary file is done losslessly through prefix codes. Any file format can be compressed through this implementation. A compressed file will be stored in a so-called Huffman file (.huff) and can be decoded with this program. There is a staggering amount of minute optimization to ensure optimal runtime and maximal compression ratio. 
+This is an implementation of Huffman's-Encoding. The kompression of an arbitrary file is done losslessly through prefix codes. Any file format can be compressed through this implementation. A compressed file will be stored in a so-called Huffman file (.huff) and can be decoded with this program. There is a staggering amount of minute optimization to ensure optimal runtime and maximal compression ratio. 
 
 # Compilation
 
