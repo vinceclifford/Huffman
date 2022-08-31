@@ -31,7 +31,7 @@ There are following options to run the program:
 `-s<string>`, `--sort<string>` With this option the sorting algorithm can be chosen to compare runtimes between the algorithms. Valid inputs: radix_binary, radix_decimal, shell. Default: shell <br />
 `-v`, `--verbose` Verbose mode <br />
 `-d` Decompress Huffman-file. If this flag is not set then input file will be compressed. If this flag is set then the input file will be interpreted as a Huffman-file and will be decoded <br />
-`-V<int>` Select specific program version. Default: V9. Program Version listed at the end of the README <br />
+`-V<int>` Select specific program version. Default: V9. Different program versions are listed at the end of the README <br />
 `-h`, `--help` Print help page <br />
 
 # Example Encoding 
