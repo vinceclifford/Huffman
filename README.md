@@ -46,7 +46,7 @@ The previously generated Huffman file `foo.huff` should be decoded. For that fol
 ```
 ./huffman -d foo.huff -o output.txt
 ```
-That result in a decompressed file called `output.txt` which is equivalent to the file `input.txt`
+That result is a decompressed file called `output.txt` which is equivalent to the file `input.txt`
 
 # Testing
 
