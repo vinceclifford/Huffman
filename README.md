@@ -27,7 +27,7 @@ There are following options to run the program:
 
 ``-B<int>`` This option runs the compression / decompression int many times on the same file and logs the (average) runtime. Default: B1 <br />
 `-o` With this flag the output file can be specified <br />
-`-b<int>`, `--batchsize<int>` Specifies how big the "batchsize" is. In other words, how many Bytes are read at one time from memory. Default set to 16384 Byte. Bigger batchsize results in less system calls and therefore improves performance drastically. <br />
+`-b<int>`, `--batchsize<int>` Specifies how big the "batchsize" is. In other words how many Bytes are read from memory at one time. Default set to 16384 Byte. Bigger batchsize results in less system calls and therefore improves performance drastically. <br />
 `-s<string>`, `--sort<string>` With this option the sorting algorithm can be chosen to compare runtimes between the algorithms. Valid inputs: radix_binary, radix_decimal, shell. Default: shell <br />
 `-v`, `--verbose` Verbose mode <br />
 `-d` Decompress Huffman-file. If this flag is not set then input file will be compressed. If this flag is set then the input file will be interpreted as a Huffman-file and will be decoded <br />
