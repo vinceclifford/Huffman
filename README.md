@@ -54,7 +54,7 @@ This program was tested via system tests. These tests check for different modali
 
 
 # Versions
-The different Versions of the program are: 
+The different Versions of the program are: <br />
 `-V1`   Radix sort binary       Batch size 1 <br />
 `-V2`   Radix sort decimal      Batch size 1 <br />
 `-V3`   Shell sort              Batch size 1 <br />
