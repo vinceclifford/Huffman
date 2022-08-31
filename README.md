@@ -30,9 +30,15 @@ There are following options to run the program:
 `-b<int>`, `--batchsize<int>` Specifies how big the "batchsize" is. In other words, how many Bytes are read at one time from memory. Default set to 16384 Byte. Bigger batchsize results in less system calls and therefore improves performance drastically. <br />
 `-s<string>`, `--sort<string>` With this option the sorting algorithm can be chosen to compare runtimes between the algorithms. Valid inputs: radix_binary, radix_decimal, shell. Default: shell <br />
 `-v`, `--verbose` Verbose mode <br />
-`-d` Decompress Huffmanfile. If this flag is not set then input file will be compressed. If this flag is set then the input file will be interpreted as a Huffman-file <br />
+`-d` Decompress Huffman-file. If this flag is not set then input file will be compressed. If this flag is set then the input file will be interpreted as a Huffman-file and will be decoded <br />
 `-V<int>` Select specific program version. Default: V9. Program Version listed at the end of the README <br />
 `-h`, `--help` Print help page <br />
+
+#Example Encoding 
+Let's assume there is a file called "input.txt" which should be compressed. 
+```
+./huffman input.txt -o huffman.huf
+```
 
 
 
