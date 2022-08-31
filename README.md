@@ -1,6 +1,6 @@
 # Huffman
 
-This is an implementation of Huffman's-Encoding. The Kompression of an arbitrary file is done losslessly through prefix codes. Any file format can be compressed through this implementation. A compressed file will be stored in a so-called Huffman-File (.huff) and can be decoded with this program. There is a staggering amount of minute optimization to ensure optimal runtime and maximal compression ratio. 
+This is an implementation of Huffman's-Encoding. The Kompression of an arbitrary file is done losslessly through prefix codes. Any file format can be compressed through this implementation. A compressed file will be stored in a so-called Huffman file (.huff) and can be decoded with this program. There is a staggering amount of minute optimization to ensure optimal runtime and maximal compression ratio. 
 
 # Compilation
 
@@ -30,7 +30,7 @@ There are following options to run the program:
 `-b<int>`, `--batchsize<int>` Specifies how big the "batchsize" is. In other words how many Bytes are read from memory at one time. Default set to 16384 Byte. Bigger batchsize results in less system calls and therefore improves performance drastically. <br />
 `-s<string>`, `--sort<string>` With this option the sorting algorithm can be chosen to compare runtimes between the algorithms. Valid inputs: radix_binary, radix_decimal, shell. Default: shell <br />
 `-v`, `--verbose` Verbose mode <br />
-`-d` Decompress Huffman-file. If this flag is not set then the input file will be compressed. If this flag is set then the input file will be interpreted as a Huffman-file and will be decoded <br />
+`-d` Decompress Huffman file. If this flag is not set then the input file will be compressed. If this flag is set then the input file will be interpreted as a Huffman file and will be decoded <br />
 `-V<int>` Select specific program version. Default: V9. Different program versions are listed at the end of the README <br />
 `-h`, `--help` Print help page <br />
 
@@ -42,7 +42,7 @@ Let's assume there is a file called "input.txt" which should be compressed.
 The above command would compress the input file into a file foo.huff. Options can be added to this command to see which effect different implementations have on the runtime. 
 
 # Example Decoding 
-The previously generated Huffman-File "foo.huff" should be decoded. For that following command must be run: 
+The previously generated Huffman file "foo.huff" should be decoded. For that following command must be run: 
 ```
 ./huffman -d foo.huff -o output.txt
 ```
@@ -63,6 +63,4 @@ The different Versions of the program are: <br />
 `-V6`   Shell sort              Batch size 4096 <br />
 `-V7`   Radix sort binary       Batch size 16384 <br />
 `-V8`   Radix sort decimal      Batch size 16384 <br />
-`-V)`   Shell sort              Batch size 16384 <br />
-
-
+`-V9`   Shell sort              Batch size 16384 <br />
