@@ -25,7 +25,7 @@ One can run the program as follows:
 ````
 There are following options to run the program: 
 
-`-B<int>` This option run the compression / decompression int many times and log the runtime. Default when set B1
+``-B<int>`` This option run the compression / decompression int many times and log the runtime. Default when set B1
 `-o` With this flag the output file can be specified
 `-b<int>`, `--batchsize<int>` 
 
