@@ -53,3 +53,14 @@ That result in a decompressed file called "output.txt" which is equivalent to th
 This program was tested via system tests. These tests check for different modalities (eg. batchsize and sorting algorithm) whether the input file equals the compressed and then decompressed file. These tests can be found in the directory "Testing" and can be executed with the script tests.sh. The input data for this script is located in the directory "test_files". Therefore anybody can execute their own individual tests and check for correctness of the program
 
 
+# Versions
+The different Versions of the program are: 
+`-V1`   Radix sort binary       Batch size 1 <br />
+`-V2`   Radix sort decimal      Batch size 1 <br />
+`-V3`   Shell sort              Batch size 1 <br />
+`-V4`   Radix sort binary       Batch size 4096 <br />
+`-V5`   Radix sort decimal      Batch size 4096 <br />
+`-V6`   Shell sort              Batch size 4096 <br />
+`-V7`   Radix sort binary       Batch size 16384 <br />
+`-V8`   Radix sort decimal      Batch size 16384 <br />
+`-V)`   Shell sort              Batch size 16384 <br />
