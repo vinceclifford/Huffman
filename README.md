@@ -39,7 +39,7 @@ Let's assume there is a file called `input.txt` which should be compressed.
 ```
 ./huffman input.txt -o foo
 ```
-The above command would compress the input file into a file foo.huff. Options can be added to this command to see which effect different implementations have on the runtime. 
+The above command would compress the input file into a file `foo.huff`. Options can be added to this command to see which effect different implementations have on the runtime. 
 
 # Example Decoding 
 The previously generated Huffman file `foo.huff` should be decoded. For that following command must be run: 
