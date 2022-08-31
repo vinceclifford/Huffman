@@ -24,6 +24,9 @@ One can run the program as follows:
 ./huffman [Options] [Input] [Output]
 ````
 There are following options to run the program: 
-`B<int>`
+
+`-B<int>` This option run the compression / decompression int many times and log the runtime. Default when set B1
+`-o` With this flag the output file can be specified
+`-b<int>`, `--batchsize<int>` 
 
 
