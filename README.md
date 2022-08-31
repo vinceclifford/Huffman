@@ -15,7 +15,7 @@ Once the code is cloned, it can be compiled. Due to the complexity of this proje
 ````
 make 
 ````
-This should take care of the entire process and result in a single executable file called "huffman"
+This should take care of the entire process and result in a single executable file called `huffman`
 
 # General Usage
 
@@ -27,7 +27,7 @@ There are following options to run the program:
 
 ``-B<int>`` This option runs the compression / decompression int many times on the same file and logs the (average) runtime. Default: B1 <br />
 `-o` With this flag the output file can be specified <br />
-`-b<int>`, `--batchsize<int>` Specifies how big the "batchsize" is. In other words how many Bytes are read from memory at one time. Default set to 16384 Byte. Bigger batchsize results in less system calls and therefore improves performance drastically. <br />
+`-b<int>`, `--batchsize<int>` Specifies how big the `batchsize` is. In other words how many Bytes are read from memory at one time. Default set to 16384 Byte. Bigger batchsize results in less system calls and therefore improves performance drastically. <br />
 `-s<string>`, `--sort<string>` With this option the sorting algorithm can be chosen to compare runtimes between the algorithms. Valid inputs: radix_binary, radix_decimal, shell. Default: shell <br />
 `-v`, `--verbose` Verbose mode <br />
 `-d` Decompress Huffman file. If this flag is not set then the input file will be compressed. If this flag is set then the input file will be interpreted as a Huffman file and will be decoded <br />
@@ -35,22 +35,22 @@ There are following options to run the program:
 `-h`, `--help` Print help page <br />
 
 # Example Encoding 
-Let's assume there is a file called "input.txt" which should be compressed. 
+Let's assume there is a file called `input.txt` which should be compressed. 
 ```
 ./huffman input.txt -o foo
 ```
 The above command would compress the input file into a file foo.huff. Options can be added to this command to see which effect different implementations have on the runtime. 
 
 # Example Decoding 
-The previously generated Huffman file "foo.huff" should be decoded. For that following command must be run: 
+The previously generated Huffman file `foo.huff` should be decoded. For that following command must be run: 
 ```
 ./huffman -d foo.huff -o output.txt
 ```
-That result in a decompressed file called "output.txt" which is equivalent to the file "input.txt"
+That result in a decompressed file called `output.txt` which is equivalent to the file `input.txt`
 
 # Testing
 
-This program was tested via system tests. These tests check for different modalities (eg. batchsize and sorting algorithm) whether the input file equals the compressed and then decompressed file. These tests can be found in the directory "Testing" and can be executed with the script tests.sh. The input data for this script is located in the directory "test_files". Therefore anybody can execute their own individual tests and check for correctness of the program
+This program was tested via system tests. These tests check for different modalities (eg. batchsize and sorting algorithm) whether the input file equals the compressed and then decompressed file. These tests can be found in the directory `Testing` and can be executed with the script tests.sh. The input data for this script is located in the directory `test_files`. Therefore anybody can execute their own individual tests and check for correctness of the program
 
 
 # Versions
